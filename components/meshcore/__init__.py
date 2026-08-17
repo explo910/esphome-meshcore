@@ -451,7 +451,11 @@ async def to_code(config):
         "lib_deps",
         [
             "https://github.com/meshcore-dev/MeshCore.git",
-            "jgromes/RadioLib@^7.6.0",
+            # Pin the exact RadioLib commit upstream MeshCore v1.17.x builds
+            # against (see its platformio.ini). A loose ^7.6.0 can resolve to
+            # a 7.6.x build that lacks APIs MeshCore's CustomSX126x/CustomSX1276
+            # radio helpers rely on, so match upstream for reproducibility.
+            "https://github.com/jgromes/RadioLib.git#6d8934836678d8894e3d556550475b37dce3e2b6",
             "rweather/Crypto@^0.4.0",
             "adafruit/RTClib@^2.1.3",
             "melopero/Melopero RV3028@^1.1.0",

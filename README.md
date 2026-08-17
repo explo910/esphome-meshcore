@@ -7,11 +7,11 @@ connected mesh endpoint without writing PlatformIO firmware from
 scratch.
 
 > Status: **builds end-to-end** against ESPHome 2026.5 + arduino-esp32
-> 3.3.8 + MeshCore 1.10. Validated on Heltec WiFi LoRa 32 V3 (SX1262)
-> and TTGO T-Beam (SX1276). Identity persists across reboots, RTC
-> learns time from the mesh, channel messaging is wire-compatible with
-> upstream `BaseChatMesh`. See [Roadmap](#roadmap) for what's still
-> open.
+> 3.3.8 + MeshCore 1.17.x (RadioLib pinned to the exact commit upstream
+> builds against). Validated on Heltec WiFi LoRa 32 V3 (SX1262) and TTGO
+> T-Beam (SX1276). Identity persists across reboots, RTC learns time from
+> the mesh, channel messaging is wire-compatible with upstream
+> `BaseChatMesh`. See [Roadmap](#roadmap) for what's still open.
 
 ## Layout
 
