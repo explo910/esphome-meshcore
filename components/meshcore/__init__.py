@@ -450,7 +450,7 @@ async def to_code(config):
     cg.add_platformio_option(
         "lib_deps",
         [
-            "https://github.com/meshcore-dev/MeshCore.git",
+            "https://github.com/meshcore-dev/MeshCore.git#companion-v1.16.0",
             # Pin the exact RadioLib commit upstream MeshCore v1.17.x builds
             # against (see its platformio.ini). A loose ^7.6.0 can resolve to
             # a 7.6.x build that lacks APIs MeshCore's CustomSX126x/CustomSX1276
